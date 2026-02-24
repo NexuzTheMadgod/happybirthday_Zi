@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surprise for Zita 💜</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <div id="magic-overlay" class="magic-overlay"></div>
+
+  <!-- Phase 1: Agreement -->
+  <div id="phase1">
+    <div class="container">
+      <h1 class="title">Let's begin</h1>
+
+      <h2>ACCESS AGREEMENT<br>M'Lady Edition 19.0</h2>
+
+      <p class="small">Effective Date: Right Now (Because Love Doesn't Wait for Paperwork)</p>
+      <p class="small">Proprietor: Victor</p>
+      <p class="small">Last updated: February 28, 2026, i don update dis html tire lol</p>
+
+      <p>Okay, By reading this document, giggling at it, rolling your eyes fondly or confused😁, You; Zita, hereinafter referred to as "M'lady" agree to the following ridiculously romantic and slightly unhinged terms.</p>
+
+      <p><strong>WHEREAS</strong>, the Proprietor of this work (me), is madly in love with you;</p>
+
+      <p><strong>WHEREAS</strong>, interacting with my checklists, documents, random notes, code snippets, memes, and all future "Victor creations" is basically foreplay at this point;</p>
+
+      <p><strong>NOW THEREFORE</strong>, in consideration of unlimited peach time (when I see you), good morning texts, gifts and overwheming affection, late-night voice notes, and me trying (an
+        d often failing) to be a good boyfriend🥲</p>
+
+      <p>and don't worry if you didn't understand all this fluff above, it's okay, all I'm saying is; Somebody loves you; I love you</p>
+
+      <div class="checkbox-group">
+        <label class="checkbox-label">
+          <input type="checkbox" id="cb1">
+          <span class="checkmark"></span>
+          I promise to smile every time I think of Victor
+        </label>
+
+        <label class="checkbox-label">
+          <input type="checkbox" id="cb2">
+          <span class="checkmark"></span>
+          I accept unlimited kisses, hugs, and peach time FOREVER 🍑
+        </label>
+
+        <label class="checkbox-label">
+          <input type="checkbox" id="cb3">
+          <span class="checkmark"></span>
+          I swear to love and live for the idea of us
+        </label>
+
+        <label class="checkbox-label">
+          <input type="checkbox" id="cb4">
+          <span class="checkmark"></span>
+          You were not expecting all this rii?😁💜
+        </label>
+      </div>
+
+      <div class="btn-wrapper">
+        <button id="agreeBtn" class="btn">
+          I Agree 💜 →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Phase 2: Happy Birthday + Code Entry -->
+  <div id="phase2" class="phase hidden">
+    <div class="birthday-content">
+      <h1 class="birthday-headline">
+        Happy Birthday<br>My Love! 🎉🎂
+      </h1>
+
+      <div class="cake-wrapper">
+        <img 
+          src="https://png.pngtree.com/png-clipart/20231001/original/pngtree-purple-birthday-cake-png-image_13025927.png"
+          alt="Birthday Cake"
+          class="cake">
+      </div>
+
+      <p class="code-instruction">
+        Enter the code of the day (DDMMYY)
+      </p>
+
+      <div class="code-area">
+        <input 
+          type="text" 
+          id="codeEntry" 
+          placeholder="DDMMYY"
+          maxlength="6"
+          autocomplete="off"
+          inputmode="numeric"
+          class="code-field"
+        >
+        <button id="unlockButton" class="unlock-btn">
+          Unlock 💜
+        </button>
+      </div>
+
+      <p id="wrongCodeMsg" class="error-message">
+        Wrong code… try again 💜
+      </p>
+    </div>
+  </div>
+
+  <!-- Phase 3: Envelope → Red Fade → Poem Reveal -->
+  <div id="phase3" class="phase hidden">
+    <div class="tribute-screen">
+      <div id="envelope" class="envelope beating">
+        <img src="https://png.pngtree.com/png-vector/20231228/ourmid/pngtree-elegant-red-envelope-png-image_11386261.png" alt="Red Envelope" class="envelope-img">
+      </div>
+
+      <div class="fade-layer" id="fadeLayer"></div>
+      <div class="ripple-layer" id="rippleLayer"></div>
+
+      <div id="poemReveal" class="poem-reveal hidden">
+        <div class="poem-content">
+          <pre>
+My dearest Zita,
+
+In the quiet corners of my heart,
+Where shadows used to live and breathe,
+You walked in wearing starlight on your skin
+And turned every darkness into spring.
+
+Your laughter is the only sound
+That can silence every storm inside me.
+Your eyes hold galaxies I never knew existed,
+And I keep falling deeper every time you blink.
+
+I wrote this when I first realized
+That love isn't loud or dramatic—
+It's the soft way your hand fits in mine,
+The way you make silence feel like home.
+
+You are not my beginning,
+But you are every beautiful thing that comes after.
+
+Forever yours,
+Victor
+          </pre>
+        </div>
+      </div>
+
+      <!-- Continuous floating hearts -->
+      <div id="heartsContainer" class="hearts-container"></div>
+    </div>
+  </div>
+
+  <!-- Background music -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="https://store.memixa.com/uploads/music/2026/01/Dave-feat-Tems-Raindance-(CeeNaija.com).mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
